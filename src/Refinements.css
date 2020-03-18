@@ -1,0 +1,29 @@
+.refn-sidebar {
+    max-height: 200px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.refn-sidebar:hover {
+    overflow-y: auto;
+}
+
+.refn-sidebar-main {
+    max-height: 300px;
+    overflow-y: hidden;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color:black !important;
+    border: black !important;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow:none !important;
+}
+
+.custom-control-label::before, 
+.custom-control-label::after {
+    border-color: grey !important;
+}
+

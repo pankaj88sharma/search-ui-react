@@ -1,0 +1,10 @@
+.auto-complete {
+    position: absolute;
+    top: 100%;
+    width: 180%;
+    z-index: 99999;
+}
+
+.search-bar {
+    background-color: #563d7c;
+}
