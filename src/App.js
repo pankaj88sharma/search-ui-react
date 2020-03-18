@@ -73,7 +73,7 @@ class App extends React.Component {
   }
 
    async pushClickStreamData(eventType, product) {
-    const baseURL = 'http://' + (this.state.clickstreamEndPoint === '' ? 'localhost:8080' : this.state.clickstreamEndPoint);
+    const baseURL = 'https://' + (this.state.clickstreamEndPoint === '' ? 'localhost:8080' : this.state.clickstreamEndPoint);
  
     const data = {
       sessionId: this.state.uid  === '' ? this.state.anonymousId : this.state.uid,
@@ -117,7 +117,7 @@ class App extends React.Component {
   }
 
   getTopProducts(keyword) {
-    const baseURL = 'http://' + (this.state.ip === '' ? 'localhost:8080' : this.state.ip);
+    const baseURL = 'https://' + (this.state.ip === '' ? 'localhost:8080' : this.state.ip);
     axios.defaults.baseURL = baseURL;
 
     axios.get('/search', {
@@ -136,7 +136,7 @@ class App extends React.Component {
   }
 
   call_train_model_api() {
-    const baseURL = 'http://' + (this.state.trainModelIp === '' ? 'localhost:5002' : this.state.trainModelIp);
+    const baseURL = 'https://' + (this.state.trainModelIp === '' ? 'localhost:5002' : this.state.trainModelIp);
     axios.defaults.baseURL = baseURL;
 
     axios.get('/train', {
@@ -151,7 +151,7 @@ class App extends React.Component {
 
 
   getApiResponse() {
-    const baseURL = 'http://' + (this.state.ip === '' ? 'localhost:8080' : this.state.ip);
+    const baseURL = 'https://' + (this.state.ip === '' ? 'localhost:8080' : this.state.ip);
     axios.defaults.baseURL = baseURL;
 
     const apiTypeParam = this.getApiType(this.state.apiType);
@@ -202,7 +202,7 @@ class App extends React.Component {
   }
 
   getTAResponse() {
-    const baseURL = 'http://' + (this.state.ip === '' ? 'localhost:8080' : this.state.ip);
+    const baseURL = 'https://' + (this.state.ip === '' ? 'localhost:8080' : this.state.ip);
     axios.defaults.baseURL = baseURL;
 
     axios.get('/typeahead', {
