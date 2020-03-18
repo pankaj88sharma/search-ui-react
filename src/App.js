@@ -143,7 +143,7 @@ class App extends React.Component {
       params: {
       }
     }).then((response) => {
-      alert(response.data.message);
+      alert(response.data);
     }).catch((err) => {
       alert(err);
     });
