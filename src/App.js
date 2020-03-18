@@ -53,7 +53,7 @@ class App extends React.Component {
       uid: '',
       reRank: false,
       reloadModel: false,
-      trainModelIp: 'brand-classifier.herokuapp.com',
+      trainModelIp: 'search-rest-api.herokuapp.com',
       anonymousId: '00000-00000-00000-00000-00000'
     };
     this.handleEvents = this.handleEvents.bind(this);
@@ -139,7 +139,7 @@ class App extends React.Component {
     const baseURL = 'http://' + (this.state.trainModelIp === '' ? 'localhost:5002' : this.state.trainModelIp);
     axios.defaults.baseURL = baseURL;
 
-    axios.get('/brand_classifier/train', {
+    axios.get('/train', {
       params: {
       }
     }).then((response) => {
