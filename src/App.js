@@ -528,7 +528,9 @@ class App extends React.Component {
       this.call_train_model_api();
     } else if (e.currentTarget.name === 'spellCheck') {
       this.setState({
-        keyword: e.currentTarget.value
+        keyword: e.currentTarget.value,
+        isLoaded: false,
+        showSpinner: true,
       }, () => {
         this.getApiResponse();
       });
