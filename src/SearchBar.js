@@ -71,7 +71,7 @@ class SearchBar extends React.Component {
                         
                         </div>
 
-                        <div className="col-6 col-md-3 col-lg-2">
+                        <div className="col-6 col-md-3 col-lg-2 text-right">
                             <button className="btn btn-link btn-lg" name="train" type="button" onClick={this.handleEvents}><i className="fa"> Train Model</i></button>
                         </div>
 

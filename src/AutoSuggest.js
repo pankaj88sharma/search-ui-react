@@ -12,10 +12,10 @@ class AutoSuggest extends React.Component {
         });
         return (
             <React.Fragment>
-                <div className="col-4 list-group pr-0 bg-white" role="tablist">
+                <div className="col-12 col-md-4 list-group pr-0 bg-white" role="tablist">
                     {items}
                 </div>
-                <div className="col-8 bg-light">
+                <div className="col-8 bg-light d-none d-md-block d-lg-block">
                     <div className="row pt-1 ml-1"> 
                     <h6 style={{fontSize: '0.875rem'}} className="font-weight-bolder">TOP PRODUCTS</h6>
                     </div>

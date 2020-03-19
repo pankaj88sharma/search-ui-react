@@ -1,9 +1,20 @@
-.auto-complete {
-    position: absolute;
-    top: 100%;
-    width: 150%;
-    z-index: 99999;
-}
+@media screen and (min-width: 768px) {
+    .auto-complete {
+        position: absolute;
+        top: 100%;
+        width: 150%;
+        z-index: 99999;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .auto-complete {
+        position: absolute;
+        top: 100%;
+        width: 70%;
+        z-index: 99999;
+    }
+  }
 
 .search-bar {
     background-color: #563d7c;
