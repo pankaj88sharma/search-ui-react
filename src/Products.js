@@ -111,7 +111,7 @@ class ProductRow extends React.Component {
         }
 
         return (
-            <div className="col-3 mb-3" style={{ fontSize: '0.950rem' }}>
+            <div className="col-12 col-md-6 col-lg-3 mb-3" style={{ fontSize: '0.950rem' }}>
                 <div className="row justify-content-center hover-pointer" id="productPage" onClick={this.handleProductPage.bind(this, product)}>
                     <div className="col-11 border rounded shadow p-4">
                         <div>

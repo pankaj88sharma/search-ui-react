@@ -28,10 +28,10 @@ class ProductPage extends React.Component {
 
         return (
             <div className="row justify-content-center mt-5">
-                <div className="col-1 mt-4">
+                <div className="col-md-2 col-lg-1 mt-4">
                     <button type="button" name="showAllProductsPage" onClick={this.props.handleEvents} className="btn btn-sm btn-secondary"><i className="fa fa-chevron-left mr-2"></i>Back</button>
                 </div>
-                <div className="col-7 border rounded pb-4">
+                <div className="col-11 col-md-9 col-lg-7 border rounded pb-4 mt-2">
                     <div className="row">
                         <div className="col mt-1 text-primary">
                             <label>{product.department} -> {product.category} -> {product.product}</label>
@@ -43,11 +43,11 @@ class ProductPage extends React.Component {
                         </div>
                     </div>
                     <div className="row mt-2">
-                        <div className="col-6">
+                        <div className="col-12 col-md-6 mb-2">
                             <img src={process.env.PUBLIC_URL + '/images/' + product.product + '.jpeg'} alt={product.title} className="img-fluid rounded" />
                         </div>
 
-                        <div className="col-6">
+                        <div className="col-12 col-md-6">
                             <div className="row">
                                 {false &&
                                     <div className="col-12">

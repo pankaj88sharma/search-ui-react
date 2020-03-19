@@ -15,14 +15,14 @@ class SearchBarProductsList extends React.Component {
             <div className="col-12">                
                 {this.props.object.showErrorPage && <ErrorPage error={this.props.object.error} />}
 
-                <div className="row">
-                    <div className="col-2">
+                <div className="row justify-content-center">
+                    <div className="col-2 d-none d-lg-block">
                         {
                         this.props.refinementsAvailable &&
                         <Refinements isLoaded={this.props.isLoaded} object={this.props.object} refns={this.props.response.navigationArea} handleEvents={this.props.handleEvents} />
                         }
                     </div>
-                    <div className="col-10">
+                    <div className="col-11 col-lg-10">
                         {
                             breadcrumbs.length > 0 && <div className="row mt-2">
                                 <div className="col-12">
