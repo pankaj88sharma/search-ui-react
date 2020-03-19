@@ -44,7 +44,7 @@ class Products extends React.Component {
                     <div className="row">
                         {this.props.num > 0 ? (
                             <div className="col-6 mt-3">
-                                <p className="font-weight-bolder">All products: {this.props.num}</p>
+                                <label className="font-weight-bolder">All products: {this.props.num}</label>
                             </div>
                         ) : (this.props.object.isLoaded &&
                             <div className="col-8 mt-3">
